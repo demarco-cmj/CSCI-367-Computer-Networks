@@ -1,0 +1,13 @@
+1. Connor DeMarco and Koby Brackebusch
+2. As far as we know, our project does not have any bugs that would cause for major concern. The gameplay runs smoothly.
+The one thing we could not figure out is in the server, receiving didn't work the same as the client.
+The server kept receiving a bunch of garbage when nothing was being sent. We couldn't get around that, other
+than reading 1024 bytes into our buffer.
+3. The way we tested that our code was working was by running multiple games. We tested the edge cases, such as
+two letter words and words with two or more of the same letters in them. We made sure either client could win, we made sure the correct 
+output was being displayed, etc. 
+4. The most challenging aspect was receiving on the client's side. The way we had our receive function set up in the previous
+assignment would not work for this one, since multiple pieces of information were to be received in different recv()s. We also
+were overwriting the buffer with each recv() call, not updating the buffer with each iteration of the loop.
+At first, the client was receiving all of the multiple send()s from the server (almost) all at once. So we edited our recv_input()
+function to ensure that it would not read farther than the number of bytes specified by the first element in the buffer. 

@@ -1,0 +1,14 @@
+1. For this final assignment we have been asked to create a virtual chat
+room for active participants and observers using the techniques learned from
+the previous assignments. One of the largest differences however is that the
+communication between the server and connected clients will not be in a scripted
+order. We have decided to follow along with the professor's announcement and 
+implement the server using Select() in order to better handle multiple clients 
+at once. 
+
+2. The most challenging part of this assignment will be modifying our
+previous code such that the server is prepared to receive any type of message 
+at any time from up to 510 unique users. We will not be able to hard-code the
+send and recv sequences in the same manner as the previous two assignments.
+
+3. Class lecture material, the book, and internet resources such as GeeksForGeeks.

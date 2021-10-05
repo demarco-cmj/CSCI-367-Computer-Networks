@@ -1,0 +1,14 @@
+Koby Brackebusch and Connor DeMarco
+1. Similar to the previous assignment, this program requires us to establish a
+client-server connection that sends simple messages back and forth. The game, however,
+is no longer hangman, and instead requires two players to attempt to make words from
+letters on the board until one play misspells or runs out of time. A round starts with 
+one of the two players going first(alternating depending on round number) and given a
+designated amount of time to create a word found in the dictonary. The players take turns
+guessing and cannot repeat words. First player to three rounds wins.
+2. The most challenging will be coding around two different clients. We have ideas on how 
+to implement it, but it won't be as easy as it is in our heads. Also, implementing the trie
+tree will be difficult. We will need to study it closely to make sure we use it efficiently.
+3. Class discord, the lecture slides, and the book.
+4. We want to use the GeeksForgeeks implementation of a trie.
+5.We plan to meet 9-12 AM on weekdays starting 7/6/21.
